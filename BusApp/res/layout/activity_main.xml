@@ -1,0 +1,77 @@
+s<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Border"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red"
+    android:padding="@dimen/padding" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/road"
+        tools:context=".MainActivity" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:text="CSB/SJU Bus App"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/sextonButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="52dp"
+            android:minWidth="200dip"
+            android:onClick="@string/onClick"
+            android:text="Sexton" />
+
+        <Button
+            android:id="@+id/flynntownButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/sextonButton"
+            android:layout_below="@+id/sextonButton"
+            android:layout_marginTop="24dp"
+            android:minWidth="200dip"
+            android:text="Flynntown" />
+
+        <Button
+            android:id="@+id/goreckiButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/flynntownButton"
+            android:layout_below="@+id/flynntownButton"
+            android:layout_marginTop="22dp"
+            android:minWidth="200dip"
+            android:text="Gorecki" />
+
+        <Button
+            android:id="@+id/eastButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/goreckiButton"
+            android:layout_below="@+id/goreckiButton"
+            android:layout_marginTop="16dp"
+            android:minWidth="200dip"
+            android:text="East" />
+
+    </RelativeLayout>
+
+</FrameLayout>
