@@ -1,4 +1,4 @@
-s<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/Border"
     android:layout_width="match_parent"
@@ -50,6 +50,7 @@ s<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_below="@+id/sextonButton"
             android:layout_marginTop="24dp"
             android:minWidth="200dip"
+            android:onClick="@string/onClick"
             android:text="Flynntown" />
 
         <Button
@@ -60,6 +61,7 @@ s<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_below="@+id/flynntownButton"
             android:layout_marginTop="22dp"
             android:minWidth="200dip"
+            android:onClick="@string/onClick"
             android:text="Gorecki" />
 
         <Button
@@ -70,6 +72,7 @@ s<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_below="@+id/goreckiButton"
             android:layout_marginTop="16dp"
             android:minWidth="200dip"
+            android:onClick="@string/onClick"
             android:text="East" />
 
     </RelativeLayout>

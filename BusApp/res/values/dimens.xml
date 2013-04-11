@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="a">5</dimen>
-    <dimen name="top">50</dimen>
+     <dimen name="a">5dp</dimen>
+    <dimen name="top">50dp</dimen>
     <dimen name="padding">10dp</dimen>
 </resources>
