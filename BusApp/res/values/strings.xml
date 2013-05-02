@@ -6,6 +6,7 @@
     <string name="menu_settings">Settings</string>
 
     <color name="red">#8A0A0A</color>
+    <color name="white">#FFFFFF</color>
 
     <string name="title_activity_sexton">SextonActivity</string>
     <string name="title_activity_flynntown">FlynntownActivity</string>

@@ -12,8 +12,10 @@ public final class R {
     }
     public static final class color {
         public static final int red=0x7f060000;
+        public static final int white=0x7f060001;
     }
     public static final class dimen {
+        public static final int LabelSize=0x7f040003;
         public static final int a=0x7f040000;
         public static final int padding=0x7f040002;
         public static final int top=0x7f040001;
@@ -34,9 +36,11 @@ public final class R {
         public static final int flynntownButton=0x7f090004;
         public static final int goreckiButton=0x7f090005;
         public static final int imageView1=0x7f090001;
-        public static final int menu_settings=0x7f090007;
+        public static final int layout=0x7f090007;
+        public static final int menu_settings=0x7f090009;
         public static final int sextonButton=0x7f090003;
         public static final int textView1=0x7f090002;
+        public static final int timeList=0x7f090008;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
