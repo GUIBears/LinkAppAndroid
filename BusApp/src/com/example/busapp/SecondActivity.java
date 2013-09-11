@@ -1,9 +1,12 @@
 package com.example.busapp;
 
+import java.util.ArrayList;
+
 import android.os.Bundle;
 import android.provider.AlarmClock;
 import android.app.Activity;
 import android.content.Intent;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.view.Menu;
 import android.view.View;
@@ -14,6 +17,8 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.AdapterView.OnItemClickListener;
+import android.database.sqlite.*;
+import com.example.busapp.*;
 
 public class SecondActivity extends Activity {
 	
@@ -28,7 +33,61 @@ public class SecondActivity extends Activity {
 		Intent intent = getIntent();
 		String buttonTitle = getIntent().getExtras().getString("title");
 		View mainLayout = findViewById(R.id.layout);
-
+		/*this would open the database.
+		 * ignore this.
+		 * this is the database functionality i'm (Bernard) working on. still need work. ignore this.
+		 * 
+		ArrayList <ArrayList> times = new ArrayList<ArrayList>();
+ 		SQLiteDatabase db = SQLiteDatabase.openDatabase("bustimes.db", null, 0);
+		
+		String timeQuery = "select * from Times where place = %";
+		Cursor c = db.rawQuery(timeQuery, new String[]{timeQuery});
+		
+		
+		ArrayList <BTime> sunday= new ArrayList <BTime>();
+		ArrayList <BTime> monday= new ArrayList <BTime>();
+		ArrayList <BTime> tuesday= new ArrayList <BTime>();
+		ArrayList <BTime> wednesday= new ArrayList <BTime>();
+		ArrayList <BTime> thursday= new ArrayList <BTime>();
+		ArrayList <BTime> friday= new ArrayList <BTime>();
+		ArrayList <BTime> saturday= new ArrayList <BTime>();
+		
+		while(c.moveToNext()){
+			ArrayList <BTime> currentDay = null;
+			String day = c.getString(c.getColumnIndex("day"));
+			if(day.contains("S")){
+			currentDay = sunday;
+			}
+			if(day.contains("M")){
+				currentDay = monday;
+				}
+			if(day.contains("T")){
+				currentDay = tuesday;
+				}
+			if(day.contains("W")){
+				currentDay = wednesday;
+				}
+			if(day.contains("R")){
+				currentDay = thursday;
+				}
+			if(day.contains("F")){
+				currentDay = thursday;
+				}
+			if(day.contains("Y")){
+				currentDay = sunday;
+				}
+			BTime currentTime = new BTime(c.getString(c.getColumnIndex("time")), c.getString(c.getColumnIndex("time")));
+			
+			currentDay.add(currentTime);
+		}
+		times.add(sunday);
+		times.add(monday);
+		times.add(tuesday);
+		times.add(wednesday);
+		times.add(thursday);
+		times.add(friday);
+		times.add(saturday);*/
+		
 		if(buttonTitle.equals("Sexton")) {
 			mainLayout.setBackgroundResource(R.drawable.sextonexterior);
 
@@ -43,6 +102,7 @@ public class SecondActivity extends Activity {
 		else if(buttonTitle.equals("East")){
 			mainLayout.setBackgroundResource(R.drawable.road);
 		}
+		
 		
 		title = (TextView) findViewById(R.id.textView1);
 		title.setText(buttonTitle);
