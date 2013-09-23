@@ -15,9 +15,7 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		sexton = (Button) findViewById(R.id.sextonButton);
-		flynntown = (Button) findViewById(R.id.flynntownButton);
 		gorecki = (Button) findViewById(R.id.goreckiButton);
-		east = (Button) findViewById(R.id.eastButton);
 		
 		
 		
@@ -35,18 +33,13 @@ public class MainActivity extends Activity {
 		
 		Button b = (Button) view;
 		String s = b.getText().toString();
-		if(b == flynntown) {
-			i.putExtra("title", s);
-		}
-		else if(b == sexton){
+		if(b == sexton){
 			i.putExtra("title", s);
 		}
 		else if(b == gorecki){
 			i.putExtra("title", s);
 		}
-		else if(b == east){
-			i.putExtra("title", s);
-		}
+
 		startActivity(i);
 		
 	}
