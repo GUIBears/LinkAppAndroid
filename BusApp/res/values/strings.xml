@@ -13,5 +13,6 @@
     <string name="title_activity_second">SecondActivity</string>
     <string name="title_activity_button">ButtonActivity</string>
     <string name="onClick">onClick</string>
+    <color name="Blue">#0000A0</color>
 
 </resources>

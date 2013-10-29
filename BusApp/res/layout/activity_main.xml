@@ -14,6 +14,7 @@
         tools:context=".MainActivity" >
 
         <TextView
+<<<<<<< HEAD
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -24,47 +25,64 @@
 
         <Button
             android:id="@+id/sextonButton"
+=======
+            android:id="@+id/textView2"
+>>>>>>> 3a469f42d8ff5b106e9c469cd004b2ec0dfd13b4
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/textView1"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="52dp"
-            android:minWidth="200dip"
-            android:onClick="@string/onClick"
-            android:text="Sexton" />
-
-        <Button
-            android:id="@+id/flynntownButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/sextonButton"
-            android:layout_below="@+id/sextonButton"
-            android:layout_marginTop="24dp"
-            android:minWidth="200dip"
-            android:onClick="@string/onClick"
-            android:text="Flynntown" />
+            android:layout_marginTop="22dp"
+            android:text="Choose a location"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
 
         <Button
             android:id="@+id/goreckiButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/flynntownButton"
-            android:layout_below="@+id/flynntownButton"
-            android:layout_marginTop="22dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/sextonButton"
+            android:layout_marginTop="48dp"
+            android:background="@color/white"
             android:minWidth="200dip"
             android:onClick="@string/onClick"
-            android:text="Gorecki" />
+            android:text="Gorecki"
+            android:textColor="@color/Blue"
+            android:textColorHint="@color/Blue"
+            android:textSize="25sp" />
 
         <Button
-            android:id="@+id/eastButton"
+            android:id="@+id/sextonButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/goreckiButton"
-            android:layout_below="@+id/goreckiButton"
-            android:layout_marginTop="16dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="30dp"
+            android:background="@color/white"
             android:minWidth="200dip"
             android:onClick="@string/onClick"
-            android:text="East" />
+            android:text="Sexton"
+            android:textColor="@color/Blue"
+            android:textColorHint="@color/Blue"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/textView2"
+            android:layout_marginTop="35dp"
+            android:text="The Link"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/red"
+            android:textSize="50sp"
+            android:textStyle="bold" />
 
     </RelativeLayout>
 
