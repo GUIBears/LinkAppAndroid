@@ -16,7 +16,7 @@ public class DatabaseAccess extends SQLiteOpenHelper {
 	
 	private static String DB_PATH = "/data/data/BusApp/databases/";
 	 
-    private static String DB_NAME = "BusTimes";
+    private static String DB_NAME = "bustimes";
  
     private SQLiteDatabase myDataBase; 
  
